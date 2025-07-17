@@ -38,7 +38,7 @@ IPV6_ADDRESS_REGEX = re.compile(r"ipv6\saddress\s(.*)", flags=re.MULTILINE)
 
 # L2 Interface
 SWITCHPORT_REGEX = re.compile(r"switchport\s(.*)", flags=re.MULTILINE)
-SWITCHPORT_ACCESS_REGEX = re.compile(r"switchport\smode\saccess", flags=re.MULTILINE)
+SWITCHPORT_ACCESS_REGEX = re.compile(r"switchport\s+(mode\saccess|access\svlan\s\d+)", flags=re.MULTILINE)
 SWITCHPORT_TRUNK_REGEX = re.compile(r"switchport\smode\strunk", flags=re.MULTILINE)
 SWITCHPORT_ACCESS_VLAN_REGEX = re.compile(r"switchport\saccess\svlan\s(.*)", flags=re.MULTILINE)
 SWITCHPORT_VOICE_VLAN_REGEX = re.compile(r"switchport\svoice\svlan\s(.*)", flags=re.MULTILINE)
